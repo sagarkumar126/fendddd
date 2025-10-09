@@ -1,0 +1,122 @@
+.my-orders {
+  padding: 50px 8%;
+  min-height: 100vh;
+  background-color: #fffdf9;
+  font-family: "Poppins", sans-serif;
+}
+
+.my-orders h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+}
+
+.my-orders .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.my-orders p {
+  margin: 0;
+  color: #444;
+}
+
+/* --- Single Order Card --- */
+.my-orders-order {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 18px 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+}
+
+.my-orders-order:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.my-orders-order img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  background-color: #ffeae2;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+/* --- Info section inside each order --- */
+.order-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.order-info .items {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+.order-info b {
+  color: #222;
+}
+
+.order-info p {
+  font-size: 15px;
+}
+
+/* --- Status Badge --- */
+.order-info p b + span,
+.order-info .status-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 8px;
+}
+
+.status-processing {
+  background-color: #f0ad4e;
+}
+.status-outfordelivery {
+  background-color: #5bc0de;
+}
+.status-delivered {
+  background-color: #5cb85c;
+}
+
+/* --- Empty state --- */
+.my-orders .container > p {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 40px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .my-orders {
+    padding: 30px 5%;
+  }
+
+  .my-orders-order {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .my-orders-order img {
+    width: 45px;
+    height: 45px;
+  }
+}

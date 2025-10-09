@@ -1,0 +1,132 @@
+.place-order {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  gap: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.place-order-left,
+.place-order-right {
+  flex: 1;
+}
+
+.place-order-left .title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.multi-fields {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.place-order-left input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.place-order-left input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+.place-order-right .cart-total {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.place-order-right h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #555;
+}
+
+.cart-total-details b {
+  font-size: 18px;
+  color: #111;
+}
+
+.place-order-right button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 25px;
+  background: #007BFF;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.place-order-right button:hover {
+  background: #0056b3;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .place-order {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .multi-fields {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .place-order {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .place-order-left .title {
+    font-size: 20px;
+  }
+
+  .place-order-right h2 {
+    font-size: 20px;
+  }
+
+  .place-order-left input,
+  .place-order-right button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .cart-total-details {
+    font-size: 14px;
+  }
+
+  .cart-total-details b {
+    font-size: 16px;
+  }
+}

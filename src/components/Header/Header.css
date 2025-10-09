@@ -1,0 +1,57 @@
+.header {
+  height: 50vh; /* smaller section instead of 90vh */
+  width: 100%;
+  background: url("header_img.png") no-repeat center center;
+  background-size: contain; /* makes the image fit without cropping */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+.header-contents {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  max-width: 600px;
+  padding: 15px;
+}
+
+.header-contents h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.header-contents p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.header-contents button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background: #ff4c24;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.header-contents button:hover {
+  background: #e63916;
+  transform: scale(1.05);
+}
