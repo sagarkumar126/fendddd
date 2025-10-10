@@ -55,3 +55,27 @@
   background: #e63916;
   transform: scale(1.05);
 }
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 400px; /* adjust height if needed */
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps image aspect ratio and fills area */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-contents {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 50px;
+}
